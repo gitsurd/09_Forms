@@ -62,7 +62,6 @@ class _HomeViewState extends State<HomeView> {
 
       print(resp.body);
     } catch (e) {
-      print(e);
       _errorMessage = e.toString();
       showAlertDialog(context, _errorMessage, _myOk);
     } finally {
